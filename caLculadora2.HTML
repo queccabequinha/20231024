@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta conjunto de caracteres = 'utf-8'>
+    <title> Título da página </title>
+    <script lang="JavaScript">
+        function botao(bot)
+        {
+            document.frm.txtSaida.value += bot
+        }
+
+        //function func2 ()
+        //{
+        //    document.getElementById("a").innerHTML = "<img src'teste2.jpg'>";
+        //}
+    </script>
+    <style>
+        input[type=button]{
+            border-radius: 15px;
+            width: 30px;
+            height: 30px;
+        }
+        input[type=text]{
+            border-radius: 5px;
+            width: 200px;
+        }
+    </style>
+    
+</head>
+<body> 
+ <form name="frm">
+    <p>Saída: <input type="text" name="txtSaida" readonly></p>
+
+    <table>
+<tr>
+    <td>
+        <input type="button" name="btnUm" value="1" onclick="botao(1)"/>
+    </td>
+    <td>
+        <input type="button" name="btnDois" value="2" onclick="botao(2)"/>
+    </td>
+    <td>
+        <input type="button" name="btnTres" value="3" onclick="botao(3)"/>
+    </td>
+    <td>
+        <input type="button" name="limpa" value="c" onclick="botao(0)"/>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="button" name="btnQuatro" value="4" onclick="botao(4)"/>
+    </td>
+    <td>
+        <input type="button" name="btnCinco" value="5" onclick="botao(5)"/>
+    </td>
+    <td>
+        <input type="button" name="btnSeis" value="6" onclick="botao(6)"/>
+    </td>
+    <td>
+        <input type="button" name="btnZero" value="+" onclick="botao(0)"/>
+</td>
+</tr>
+
+<tr>
+    <td>
+        <input type="button" name="btnSete" value="7" onclick="botao(7)"/>
+    </td>
+    <td>
+        <input type="button" name="btnOito" value="8" onclick="botao(8)"/>
+    </td>
+    <td>
+        <input type="button" name="btnNove" value="9" onclick="botao(9)"/>
+    </td>
+    <td>
+        <input type="button" name="btnZero" value="-" onclick="botao(0)"/>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="button" name="btnZero" value="0" onclick="botao(0)"/>
+    </td>
+    <td>
+        <input type="button" name="btnZero" value="x" onclick="botao(0)"/>
+    </td>
+    <td>
+        <input type="button" name="btnZero" value="/" onclick="botao(0)"/>
+    </td>
+    <td>
+        <input type="button" name="btnZero" value="=" onclick="botao(0)"/>
+    </td>
+</tr>
+
+</table>
+
+
+</form> 
+</body>
+</html>
